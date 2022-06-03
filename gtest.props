@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- preprocessor -->
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)googletest/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <!-- linker -->
+  <ItemGroup>
+    <ProjectReference Include="$(MSBuildThisFileDirectory)gtest.vcxproj">
+      <Project>{BDAD6F39-DF5B-4387-87D7-63A3513FE909}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
